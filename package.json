@@ -1,0 +1,24 @@
+{
+  "name": "webpack-email-template",
+  "version": "1.0.0",
+  "description": "A simple webpack project to start creating an email template.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efimov-it/webpack-email-template.git"
+  },
+  "keywords": [
+    "webpack",
+    "email",
+    "template"
+  ],
+  "author": "Petr Efimov (@efimov-it)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/efimov-it/webpack-email-template/issues"
+  },
+  "homepage": "https://github.com/efimov-it/webpack-email-template#readme"
+}
