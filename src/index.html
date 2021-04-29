@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack template email</title>
+</head>
+<body bgcolor="#F0F2F4" leftmargin="0" topmargin="0" style="height: 100%">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" style="height: 100%;">
+        <tr>
+            <td align="center" style="padding:0">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width:600px; border:#DEDEDE 1px solid" bgcolor="#ffffff">
+                    <tr>
+                        <td style="padding:30px 40px; border-bottom:#DEDEDE 1px solid;">
+                            <h1 style="font-family:Arial,Helvetica,sans-serif; color: #3C3C3C">
+                                Webpack template email
+                            </h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:30px 40px">
+                            <%let paragraphs = [
+                                    {content: "This is one of some paragraphs that is output from components via lodash."},
+                                    {content: "You can create your own components and use them in your email template."}
+                              ]
+                            %>
+                            <%=_.template(require('./components/paragraph.html').default)(paragraphs[0])%>
+                            <%=_.template(require('./components/paragraph.html').default)(paragraphs[1])%>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
