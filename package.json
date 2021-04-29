@@ -4,7 +4,10 @@
   "description": "A simple webpack project to start creating an email template.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve",
+    "build": "webpack",
+    "production": "set NODE_ENV=production && webpack"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/efimov-it/webpack-email-template/issues"
   },
-  "homepage": "https://github.com/efimov-it/webpack-email-template#readme"
+  "homepage": "https://github.com/efimov-it/webpack-email-template#readme",
+  "devDependencies": {
+    "base64-inline-loader": "^1.1.1",
+    "html-webpack-plugin": "^5.3.1",
+    "raw-loader": "^4.0.2",
+    "webpack": "^5.36.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
